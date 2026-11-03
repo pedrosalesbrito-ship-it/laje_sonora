@@ -1,46 +1,41 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Topo */
+.topo {
+    padding-block: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-:root {
-    --concreto: #E2DFD8;
-    --concreto-escuro: #CBC7BE;
-    --tinta: #0F1E3D;
-    --caixa-dagua: #1F5FBF;
-    --fita: #F3C623;
-    --branco: #FFFFFF;
-
-    --fonte-cartaz: "Big Shoulders", "Arial Narrow", sans-serif;
-    --fonte-texto: "Archivo", Arial, sans-serif;
-}
-
-
-body {
-    background-color: var(--concreto);
-    color: var(--tinta);
-    font-family: var(--fonte-texto);
-    font-size: 17px;
-    line-height: 1.55;
-}
-
-
-a {
-    color: inherit;
-}
-
-
-h1, h2, h3 {
+/* Logo */
+.logo {
     font-family: var(--fonte-cartaz);
+    font-size: 34px;
     font-weight: 900;
-    line-height: 0.95;
+    text-decoration: none;
 }
 
-
-.conteudo {
-    max-width: 1200px;
-    margin-inline: auto;
-    padding-inline: 32px;
+/* Menu */
+.menu {
+    display: flex;
+    gap: 36px;
 }
+
+/* Links do menu */
+.menu a {
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 4px solid transparent;
+}
+
+/* Quando passar o mouse */
+.menu a:hover {
+    border-bottom-color: var(--tinta);
+}
+
+/* Página atual */
+.menu a.atual {
+    border-bottom-color: var(--fita);
+}
+
